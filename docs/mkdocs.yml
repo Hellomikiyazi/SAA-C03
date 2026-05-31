@@ -1,0 +1,50 @@
+site_name: AWS SAA-C03 备考手册
+site_description: AWS Certified Solutions Architect - Associate 知识点讲解与考试对应手册
+site_author: AWS SAA-C03 Study Guide
+docs_dir: docs
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: orange
+    accent: orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+
+nav:
+  - 首页: index.md
+  - Domain 1 安全架构 (30%):
+      - 总览: domain1/index.md
+      - 1.1 安全访问控制: domain1/1-1-secure-access.md
+      - 1.2 安全工作负载与应用: domain1/1-2-secure-workloads.md
+      - 1.3 数据安全控制: domain1/1-3-data-security.md
+  - Domain 2 弹性架构 (26%):
+      - 总览: domain2/index.md
+      - 2.1 可扩展与松耦合架构: domain2/2-1-scalable-loosely.md
+      - 2.2 高可用与容错架构: domain2/2-2-ha-fault-tolerant.md
+  - Domain 3 高性能架构 (24%):
+      - 总览: domain3/index.md
+      - 3.1 高性能存储: domain3/3-1-storage.md
+      - 3.2 高性能弹性计算: domain3/3-2-compute.md
+      - 3.3 高性能数据库: domain3/3-3-database.md
+      - 3.4 高性能网络架构: domain3/3-4-network.md
+      - 3.5 数据摄取与转换: domain3/3-5-data-ingestion.md
+  - Domain 4 成本优化 (20%):
+      - 总览: domain4/index.md
+      - 4.1 成本优化存储: domain4/4-1-storage.md
+      - 4.2 成本优化计算: domain4/4-2-compute.md
+      - 4.3 成本优化数据库: domain4/4-3-database.md
+      - 4.4 成本优化网络: domain4/4-4-network.md
+  - 参考资料:
+      - 考试范围服务清单: reference/services-in-scope.md
+      - 应试技巧与速记: reference/exam-tips.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
